@@ -14,7 +14,14 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<div class="content-container">
+		<?php
+		// Only add content container if NOT an Elementor page
+		$is_elementor = function_exists( 'warp_is_elementor_page' ) && warp_is_elementor_page();
+		if ( ! $is_elementor ) :
+			?>
+			<div class="content-container">
+		<?php endif; ?>
+
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -36,7 +43,10 @@ get_header();
 
 			endwhile; // End of the loop
 			?>
-		</div><!-- .content-container -->
+
+		<?php if ( ! $is_elementor ) : ?>
+			</div><!-- .content-container -->
+		<?php endif; ?>
 	</main><!-- #primary -->
 
 <?php
