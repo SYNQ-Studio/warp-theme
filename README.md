@@ -1,6 +1,15 @@
 # Warp Theme
 
-A feature-rich WordPress theme inspired by [warp.dev](https://warp.dev) design, fully compatible with Elementor page builder.
+A feature-rich WordPress theme inspired by [warp.dev](https://warp.dev) design, fully compatible with **Elementor Pro V4 Alpha** and **WordPress AI Plugin**. Built for modern web creators with cutting-edge features.
+
+## 🚀 Version 1.1.0 - NEW!
+
+**What's New:**
+- ✨ **Elementor Pro V4 Alpha Support** - Variables, Filters, Atomic Elements, Size Variables, Granular Transitions
+- 🤖 **WordPress AI Plugin Integration** - AI-powered content generation, alt text generation, smart suggestions
+- 🎨 **New Smart Content Widget** - Advanced widget combining V4 + AI features
+- 📊 **Enhanced Admin Notices** - Get notified about V4 and AI plugin status
+- 🎯 **V4 Optimization** - Single DIV wrapper architecture for better performance
 
 ## Features
 
@@ -10,6 +19,7 @@ A feature-rich WordPress theme inspired by [warp.dev](https://warp.dev) design, 
 - **Typography** - Inter font family for clean, professional text
 - **Smooth Animations** - Scroll animations, parallax effects, and smooth transitions
 - **Customizable Colors** - Full color customization via WordPress Customizer
+- **V4 Variables System** - Theme-wide design tokens for consistency
 
 ### WordPress Features
 - **Theme Support** - Post thumbnails, custom logo, custom background, HTML5 markup
@@ -18,17 +28,32 @@ A feature-rich WordPress theme inspired by [warp.dev](https://warp.dev) design, 
 - **Translation Ready** - Full i18n support with .pot file
 - **SEO Optimized** - Semantic HTML5 markup and proper heading structure
 - **Accessibility Ready** - ARIA labels, keyboard navigation, screen reader support
+- **AI Integration** - Optional AI-powered content generation and suggestions
 
-### Elementor Integration
-- **Full Elementor Support** - Compatible with Elementor page builder
+### Elementor Pro V4 Alpha Integration 🆕
+- **Variables System** - Color and size variables across all widgets
+- **Filters Support** - Visual filters (brightness, blur, contrast, etc.)
+- **Atomic Elements** - Single DIV wrapper architecture for better performance
+- **Size Variables** - Consistent spacing, typography, and layout values
+- **Granular Transitions** - Property-level transition control
+- **Cloud Templates** - Save and apply complete website templates
+- **Custom Attributes** - Add HTML attributes for advanced control
 - **Theme Locations** - Header, footer, single, and archive template support
-- **Custom Widgets**:
-  - Warp Hero - Full-screen hero sections with CTA buttons
-  - Warp Feature - Feature boxes with icons
-  - Warp CTA Button - Stylized call-to-action buttons
-  - Warp Terminal - Code terminal display widget
-- **Custom Colors** - Pre-configured Elementor color palette
-- **Responsive Controls** - Mobile, tablet, and desktop breakpoints
+
+### Elementor Custom Widgets
+- **Warp Hero** - Full-screen hero sections with CTA buttons
+- **Warp Feature** - Feature boxes with icons
+- **Warp CTA Button** - Stylized call-to-action buttons
+- **Warp Terminal** - Code terminal display widget
+- **Warp Smart Content (NEW)** - Advanced widget with V4 Variables + AI generation support
+
+### WordPress AI Plugin Integration 🆕
+- **AI Content Generation** - Generate titles, descriptions, and CTAs
+- **Auto Alt Text** - Automatic image alt text generation
+- **Content Suggestions** - Smart content recommendations in editor
+- **Custom AI Abilities** - Theme-specific AI generation prompts
+- **Elementor Integration** - AI generation buttons in widgets
+- **Auto Excerpts** - Generate post excerpts automatically
 
 ### Performance
 - **Optimized Loading** - Minimal dependencies, efficient code
@@ -46,9 +71,23 @@ A feature-rich WordPress theme inspired by [warp.dev](https://warp.dev) design, 
 5. Activate the theme
 
 ### Requirements
-- WordPress 6.0 or higher
+
+**Minimum Requirements:**
+- WordPress 6.0 or higher (tested up to 6.8)
 - PHP 7.4 or higher
-- Elementor 3.0+ (optional but recommended)
+- Elementor 3.0+ (free version works, but Pro recommended)
+
+**Recommended for Full Features:**
+- **Elementor Pro V4 Alpha** - Unlock Variables, Filters, Atomic Elements, and advanced features
+- **WordPress AI Plugin** - Enable AI-powered content generation ([GitHub](https://github.com/WordPress/ai))
+
+**How to Enable Elementor V4:**
+1. Install Elementor Pro
+2. Go to WordPress Dashboard → Elementor → Settings → Editor V4
+3. Toggle "Enable Editor V4 Alpha" to ON
+4. Save changes
+
+**Note:** Elementor V4 Alpha is still in development. Use on staging/test sites only.
 
 ## Setup Guide
 
@@ -81,6 +120,10 @@ Add URLs for:
 
 #### Layout
 - **Container Width** - Set max content width (960-1920px)
+
+#### AI Features 🆕 (if WordPress AI Plugin is installed)
+- **Auto-generate Alt Text** - Automatically generate alt text for uploaded images
+- **Enable AI Content Suggestions** - Show AI-powered content suggestions in the editor
 
 ### 2. Setup Menus
 
@@ -133,6 +176,33 @@ Navigate to **Appearance → Widgets**:
 #### Warp Terminal Widget
 - Enter terminal/code content
 - Displays in monospace font with terminal styling
+
+#### Warp Smart Content Widget 🆕 (V4 + AI)
+This advanced widget combines Elementor V4 features with AI capabilities:
+
+**Content Options:**
+- Heading and WYSIWYG content
+- AI Generation toggle (if WordPress AI Plugin is active)
+- Layout styles: Default, Card, Minimal
+
+**V4 Features (if Elementor V4 is enabled):**
+- Use Theme Variables toggle
+- Hover Filters: Brightness, Blur, Contrast
+- Transition Types: Fast, Base, Slow, Smooth
+- Custom Attributes support
+
+**AI Features (if WordPress AI Plugin is active):**
+- Click "Generate with AI" button to create content
+- AI-Enhanced badge displays automatically
+- Context-aware content generation
+
+**Usage:**
+1. Drag "Warp Smart Content (AI + V4)" widget to your page
+2. Enable AI Generation if desired
+3. Click "Generate with AI" for smart content suggestions
+4. Choose layout style and customize appearance
+5. Enable V4 Variables for consistent theme styling
+6. Add hover filters for interactive effects
 
 ### Theme Locations
 
@@ -295,6 +365,46 @@ For issues, questions, or contributions:
 - Issues: [https://github.com/SYNQ-Studio/warp-theme/issues](https://github.com/SYNQ-Studio/warp-theme/issues)
 
 ## Changelog
+
+### 1.1.0 - 2025-11-05
+**Major Update: Elementor Pro V4 Alpha + WordPress AI Integration**
+
+**New Features:**
+- ✨ Full Elementor Pro V4 Alpha support with Variables, Filters, and Atomic Elements
+- 🤖 WordPress AI Plugin integration for content generation
+- 🎨 New Warp Smart Content widget combining V4 + AI features
+- 📊 V4 Variables system with theme-wide design tokens
+- 🎯 Size Variables for consistent spacing and layout
+- ⚡ Granular Transitions with property-level control
+- 🖼️ Automatic alt text generation for images (AI)
+- 📝 AI-powered content suggestions and generation
+- 🎨 V4 Filters support (brightness, blur, contrast, etc.)
+- 🏗️ Atomic Elements with single DIV wrapper architecture
+
+**Enhancements:**
+- Added `inc/elementor-v4-support.php` for V4 features
+- Added `inc/wordpress-ai-support.php` for AI integration
+- Enhanced admin notices for plugin status
+- Updated Elementor widget registration system
+- Improved CSS with V4-specific optimizations
+- Added AI generation buttons in Elementor editor
+
+**Files Added:**
+- `/inc/elementor-v4-support.php` (500+ lines)
+- `/inc/wordpress-ai-support.php` (450+ lines)
+- `/elementor/widgets/warp-smart-content.php` (400+ lines)
+
+**Updated:**
+- `functions.php` - Added new includes (v1.1.0)
+- `style.css` - Updated theme header and version
+- `README.md` - Comprehensive documentation updates
+- `/assets/css/elementor-widgets.css` - Added Smart Content styles
+- `/inc/elementor-support.php` - Registered new widget
+
+**Requirements:**
+- Updated to support WordPress 6.8
+- Added support for Elementor Pro V4 Alpha
+- Added support for WordPress AI Plugin
 
 ### 1.0.0 - 2025-11-05
 - Initial release

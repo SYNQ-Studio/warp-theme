@@ -163,6 +163,94 @@
 	color: var(--warp-primary-text);
 }
 
+/* Warp Smart Content Widget (V4 + AI) */
+.warp-smart-content {
+	position: relative;
+	padding: var(--warp-spacing-xl);
+	background: var(--warp-secondary-bg);
+	border: 1px solid var(--warp-border);
+	border-radius: var(--warp-radius-lg);
+	transition: all var(--warp-transition-base);
+}
+
+.warp-smart-content.e-atomic-widget {
+	/* V4 single DIV wrapper optimization */
+	display: block;
+}
+
+.warp-smart-content.warp-use-variables {
+	/* Using theme V4 variables */
+	background: var(--warp-secondary-bg);
+	color: var(--warp-primary-text);
+	padding: var(--warp-spacing-lg);
+	border-radius: var(--warp-radius-md);
+}
+
+.warp-smart-content.warp-layout-card {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.warp-smart-content.warp-layout-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.warp-smart-content.warp-layout-minimal {
+	background: transparent;
+	border: none;
+	padding: var(--warp-spacing-md) 0;
+}
+
+.warp-smart-content__heading {
+	margin-bottom: var(--warp-spacing-md);
+	font-size: var(--warp-font-size-2xl);
+	font-weight: var(--warp-font-weight-semibold);
+	color: var(--warp-primary-text);
+}
+
+.warp-smart-content__text {
+	margin-bottom: var(--warp-spacing-md);
+	font-size: var(--warp-font-size-base);
+	color: var(--warp-secondary-text);
+	line-height: 1.7;
+}
+
+.warp-smart-content__ai-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px 12px;
+	font-size: 11px;
+	font-weight: 500;
+	color: #fff;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border-radius: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.warp-smart-content__ai-badge svg {
+	width: 12px;
+	height: 12px;
+}
+
+/* V4 Filter effects */
+.warp-smart-content.warp-hover-filter {
+	transition: filter var(--warp-transition-base);
+}
+
+.warp-smart-content.warp-filter-brightness:hover {
+	filter: brightness(1.2);
+}
+
+.warp-smart-content.warp-filter-blur:hover {
+	filter: blur(2px);
+}
+
+.warp-smart-content.warp-filter-contrast:hover {
+	filter: contrast(1.2);
+}
+
 /* Responsive adjustments */
 @media (max-width: 809px) {
 	.warp-hero__title {
@@ -175,5 +263,13 @@
 
 	.warp-hero__actions {
 		flex-direction: column;
+	}
+
+	.warp-smart-content {
+		padding: var(--warp-spacing-md);
+	}
+
+	.warp-smart-content__heading {
+		font-size: var(--warp-font-size-xl);
 	}
 }
