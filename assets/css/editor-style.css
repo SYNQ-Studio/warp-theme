@@ -1,0 +1,26 @@
+/**
+ * Editor styles for Warp Theme
+ *
+ * @package Warp_Theme
+ * @since 1.0.0
+ */
+
+/* Import the same design system */
+@import url('main.css');
+
+/* Editor specific styles */
+.editor-styles-wrapper {
+	background-color: var(--warp-primary-bg);
+	color: var(--warp-primary-text);
+	font-family: var(--warp-font-primary);
+	font-size: var(--warp-font-size-base);
+	line-height: 1.6;
+}
+
+.editor-styles-wrapper a {
+	color: var(--warp-secondary-text);
+}
+
+.editor-styles-wrapper a:hover {
+	color: var(--warp-primary-text);
+}

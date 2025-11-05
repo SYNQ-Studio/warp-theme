@@ -1,0 +1,26 @@
+/**
+ * Elementor Editor Styles for Warp Theme
+ *
+ * @package Warp_Theme
+ * @since 1.0.0
+ */
+
+/* Editor preview styles */
+.elementor-editor-active {
+	background-color: #121212;
+}
+
+/* Widget icons in editor */
+.elementor-element .icon {
+	color: #e3e2e0;
+}
+
+/* Preview area styles */
+.elementor-preview {
+	background-color: #121212;
+}
+
+/* Help text styling */
+.elementor-control-field-description {
+	color: #afaeac;
+}

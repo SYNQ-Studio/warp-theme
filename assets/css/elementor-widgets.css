@@ -1,0 +1,179 @@
+/**
+ * Elementor Widgets Styles for Warp Theme
+ *
+ * @package Warp_Theme
+ * @since 1.0.0
+ */
+
+/* Warp Hero Widget */
+.warp-hero {
+	position: relative;
+	padding: var(--warp-spacing-4xl) 0;
+	background: var(--warp-primary-bg);
+	overflow: hidden;
+}
+
+.warp-hero__content {
+	position: relative;
+	z-index: 2;
+	max-width: var(--warp-container-width);
+	margin: 0 auto;
+	padding: 0 var(--warp-spacing-md);
+	text-align: center;
+}
+
+.warp-hero__title {
+	margin-bottom: var(--warp-spacing-lg);
+	font-size: var(--warp-font-size-5xl);
+	font-weight: var(--warp-font-weight-black);
+	line-height: 1.1;
+	color: var(--warp-primary-text);
+}
+
+.warp-hero__subtitle {
+	margin-bottom: var(--warp-spacing-xl);
+	font-size: var(--warp-font-size-xl);
+	color: var(--warp-secondary-text);
+	line-height: 1.5;
+}
+
+.warp-hero__actions {
+	display: flex;
+	gap: var(--warp-spacing-md);
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Warp Feature Widget */
+.warp-feature {
+	padding: var(--warp-spacing-xl);
+	background: var(--warp-secondary-bg);
+	border: 1px solid var(--warp-border);
+	border-radius: var(--warp-radius-lg);
+	transition: transform var(--warp-transition-base), box-shadow var(--warp-transition-base);
+}
+
+.warp-feature:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.warp-feature__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	margin-bottom: var(--warp-spacing-md);
+	font-size: var(--warp-font-size-3xl);
+	color: var(--warp-accent);
+	background: var(--warp-tertiary-bg);
+	border-radius: var(--warp-radius-md);
+}
+
+.warp-feature__title {
+	margin-bottom: var(--warp-spacing-sm);
+	font-size: var(--warp-font-size-xl);
+	font-weight: var(--warp-font-weight-semibold);
+	color: var(--warp-primary-text);
+}
+
+.warp-feature__description {
+	font-size: var(--warp-font-size-base);
+	color: var(--warp-secondary-text);
+	line-height: 1.6;
+}
+
+/* Warp CTA Button Widget */
+.warp-cta-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--warp-spacing-sm);
+	padding: var(--warp-spacing-md) var(--warp-spacing-xl);
+	font-size: var(--warp-font-size-base);
+	font-weight: var(--warp-font-weight-medium);
+	color: var(--warp-primary-bg);
+	background: var(--warp-primary-text);
+	border: none;
+	border-radius: var(--warp-radius-md);
+	cursor: pointer;
+	transition: all var(--warp-transition-fast);
+	text-decoration: none;
+}
+
+.warp-cta-button:hover {
+	background: var(--warp-secondary-text);
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(227, 226, 224, 0.3);
+}
+
+.warp-cta-button--secondary {
+	background: transparent;
+	color: var(--warp-primary-text);
+	border: 1px solid var(--warp-border);
+}
+
+.warp-cta-button--secondary:hover {
+	background: var(--warp-hover);
+	border-color: var(--warp-primary-text);
+}
+
+/* Warp Terminal Widget */
+.warp-terminal {
+	background: var(--warp-tertiary-bg);
+	border: 1px solid var(--warp-border);
+	border-radius: var(--warp-radius-lg);
+	overflow: hidden;
+}
+
+.warp-terminal__header {
+	display: flex;
+	align-items: center;
+	gap: var(--warp-spacing-sm);
+	padding: var(--warp-spacing-md);
+	background: var(--warp-secondary-bg);
+	border-bottom: 1px solid var(--warp-border);
+}
+
+.warp-terminal__button {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: var(--warp-muted-text);
+}
+
+.warp-terminal__button--close { background: #ff5f56; }
+.warp-terminal__button--minimize { background: #ffbd2e; }
+.warp-terminal__button--maximize { background: #27c93f; }
+
+.warp-terminal__content {
+	padding: var(--warp-spacing-lg);
+	font-family: var(--warp-font-mono);
+	font-size: var(--warp-font-size-sm);
+	line-height: 1.8;
+	color: var(--warp-secondary-text);
+}
+
+.warp-terminal__prompt {
+	color: var(--warp-accent);
+}
+
+.warp-terminal__command {
+	color: var(--warp-primary-text);
+}
+
+/* Responsive adjustments */
+@media (max-width: 809px) {
+	.warp-hero__title {
+		font-size: var(--warp-font-size-4xl);
+	}
+
+	.warp-hero__subtitle {
+		font-size: var(--warp-font-size-lg);
+	}
+
+	.warp-hero__actions {
+		flex-direction: column;
+	}
+}
