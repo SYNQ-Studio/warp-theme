@@ -54,6 +54,7 @@ function warp_register_elementor_widgets( $widgets_manager ) {
 		'warp-feature',
 		'warp-cta-button',
 		'warp-terminal',
+		'warp-smart-content', // V4 + AI widget
 	);
 
 	foreach ( $widget_files as $widget_file ) {
@@ -78,6 +79,10 @@ function warp_register_elementor_widgets( $widgets_manager ) {
 
 	if ( class_exists( 'Warp_Terminal_Widget' ) ) {
 		$widgets_manager->register( new Warp_Terminal_Widget() );
+	}
+
+	if ( class_exists( 'Warp_Smart_Content_Widget' ) ) {
+		$widgets_manager->register( new Warp_Smart_Content_Widget() );
 	}
 }
 add_action( 'elementor/widgets/register', 'warp_register_elementor_widgets' );

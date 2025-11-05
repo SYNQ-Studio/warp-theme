@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define theme constants
  */
-define( 'WARP_THEME_VERSION', '1.0.0' );
+define( 'WARP_THEME_VERSION', '1.1.0' );
 define( 'WARP_THEME_DIR', get_template_directory() );
 define( 'WARP_THEME_URI', get_template_directory_uri() );
 
@@ -33,6 +33,20 @@ require_once WARP_THEME_DIR . '/inc/enqueue-scripts.php';
  * Elementor compatibility and custom widgets
  */
 require_once WARP_THEME_DIR . '/inc/elementor-support.php';
+
+/**
+ * Elementor Pro V4 Alpha support
+ */
+if ( file_exists( WARP_THEME_DIR . '/inc/elementor-v4-support.php' ) ) {
+	require_once WARP_THEME_DIR . '/inc/elementor-v4-support.php';
+}
+
+/**
+ * WordPress AI Plugin integration
+ */
+if ( file_exists( WARP_THEME_DIR . '/inc/wordpress-ai-support.php' ) ) {
+	require_once WARP_THEME_DIR . '/inc/wordpress-ai-support.php';
+}
 
 /**
  * Customizer options
